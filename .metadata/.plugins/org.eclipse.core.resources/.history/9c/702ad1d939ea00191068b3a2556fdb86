@@ -1,0 +1,16 @@
+public class Principal {
+
+	public static void main(String[] args) {
+
+		if (args.length < 1 || args.length > 5) {
+			System.out.println("Debes pasar entre 1 y 5 par�metros");
+
+		} else {
+			for (int i = 0; i < args.length; i++) {
+				Secundaria[] hilos = new Secundaria[args.length];
+			}
+			
+		}
+	}
+
+}

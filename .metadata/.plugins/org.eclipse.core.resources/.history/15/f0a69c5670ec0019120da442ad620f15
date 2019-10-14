@@ -1,0 +1,14 @@
+
+public class Productor extends Thread{
+
+	private Cola cola = null;
+	private int veces =0;
+	
+	public Productor() {
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public void run() {
+		
+	}
+}

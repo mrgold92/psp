@@ -1,0 +1,27 @@
+
+public class Consumidor extends Thread {
+	private Cola cola = null;
+	private int veces = 0;
+
+	public Consumidor(int veces, Cola cola) {
+		this.cola = cola;
+		this.veces = veces;
+	}
+
+	@Override
+	public void run() {
+		int i = 0;
+
+		while (i < veces) {
+			if (cola.desencolar()) {
+				i++;
+			} else {
+				try {
+					sleep(50);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+}

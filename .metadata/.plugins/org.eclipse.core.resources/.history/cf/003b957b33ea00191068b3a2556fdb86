@@ -1,0 +1,19 @@
+import org.omg.CORBA.PUBLIC_MEMBER;
+
+public class Principal {
+
+	public static void main(String[] args) {
+
+		for (int i = 0; i < 3; i++) {
+			Thread hilo = new Thread() {
+				public void run() {
+					System.out.println("soy un hilo");
+				}
+			};
+
+		}
+
+		System.out.println("No soy un hilo");
+	}
+
+}

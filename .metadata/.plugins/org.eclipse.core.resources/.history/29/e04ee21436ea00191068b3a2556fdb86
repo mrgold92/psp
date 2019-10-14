@@ -1,0 +1,8 @@
+
+public class Secundaria extends Thread {
+
+	public void run() {
+		
+	}
+	
+}

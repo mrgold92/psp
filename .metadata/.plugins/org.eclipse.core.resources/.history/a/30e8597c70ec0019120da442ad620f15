@@ -1,0 +1,16 @@
+
+public class Productor extends Thread {
+
+	private Cola cola = null;
+	private int veces = 0;
+
+	public Productor(int veces, Cola cola) {
+		this.cola = cola;
+		this.veces = veces;
+	}
+
+	@Override
+	public void run() {
+		int i=0;
+	}
+}

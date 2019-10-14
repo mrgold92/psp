@@ -1,0 +1,28 @@
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Cola cola = new Cola(10);
+
+		Productor productor = new Productor(10, cola);
+		Consumidor consumidor = new Consumidor(10, cola);
+
+		Thread pro = new Thread(productor);
+		Thread con = new Thread(consumidor);
+
+		pro.start();
+		con.start();
+
+		while (pro.isAlive() || con.isAlive()) {
+			try {
+				Thread.sleep(100);
+			} catch (InterruptedException e) {
+				Logger.getLogger(Productor.class.getName()).log(Level.SEVERE, null, e);
+			}
+		}
+	}
+
+}

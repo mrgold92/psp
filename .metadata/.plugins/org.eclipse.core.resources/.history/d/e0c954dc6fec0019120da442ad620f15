@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class Cola {
+
+	private int maxelementos;
+	private LinkedList<Integer> cola;
+
+	public Cola(int max) {
+		this.cola = new ArrayList<Integer>();
+		this.maxelementos = max;
+	}
+
+	synchronized public void encolar(int numero) {
+		this.cola.add(numero);
+	}
+
+	synchronized public void desencolar() {
+		if (this.cola.size() > 0) {
+			this.cola.remove(this.ar)
+		}
+	}
+}

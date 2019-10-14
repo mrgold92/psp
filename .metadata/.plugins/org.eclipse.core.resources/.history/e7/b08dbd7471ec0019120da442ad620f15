@@ -1,0 +1,18 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Cola cola = new Cola(10);
+		int veces = 4;
+		Productor productor = new Productor(veces, cola);
+		Consumidor consumidor = new Consumidor(veces, cola);
+		
+		for (int i = 0; i < veces; i++) {
+			productor.start();
+			consumidor.start();
+		}
+
+	}
+
+}

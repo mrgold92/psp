@@ -1,0 +1,9 @@
+
+public class Consumidor extends Thread {
+
+	private Cola cola;
+
+	public Consumidor(Cola c) {
+		this.cola = c;
+	}
+}

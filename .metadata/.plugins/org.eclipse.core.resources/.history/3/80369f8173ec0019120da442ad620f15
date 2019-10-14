@@ -1,0 +1,10 @@
+
+public class Productor extends Thread {
+
+	private Cola cola;
+
+	public Cola(Cola c) {
+		this.cola = c;
+	}
+
+}

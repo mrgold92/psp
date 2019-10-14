@@ -1,0 +1,10 @@
+
+public class Consumidor extends Thread {
+	private Cola cola = null;
+	private int veces = 0;
+
+	public Consumidor(int veces, Cola cola) {
+		this.cola = cola;
+		this.veces = veces;
+	}
+}

@@ -1,0 +1,11 @@
+
+public class Productor extends Thread{
+
+	private Cola cola = null;
+	private int veces =0;
+	
+	@Override
+	public void run() {
+		
+	}
+}

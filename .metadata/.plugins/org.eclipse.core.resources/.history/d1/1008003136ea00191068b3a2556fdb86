@@ -1,0 +1,10 @@
+
+public class Secundaria extends Thread {
+
+	private String ficheroRecibidoS;
+	
+	public void run() {
+		
+	}
+	
+}

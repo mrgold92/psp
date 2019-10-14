@@ -1,0 +1,18 @@
+
+public class Secundaria extends Thread {
+
+	private String ficheroRecibido;
+
+	public String getFicheroRecibido() {
+		return ficheroRecibido;
+	}
+
+	public void setFicheroRecibidoS(String ficheroRecibido) {
+		this.ficheroRecibido = ficheroRecibido;
+	}
+
+	public void run() {
+
+	}
+
+}

@@ -1,0 +1,9 @@
+
+public class Productor extends Thread{
+
+	private int veces =0;
+	
+	public void run() {
+		
+	}
+}

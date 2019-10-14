@@ -1,0 +1,48 @@
+import java.util.ArrayList;
+
+public class Cola {
+
+	private int maxelementos;
+	private ArrayList<Integer> cola;
+
+	public Cola(int max) {
+		this.cola = new ArrayList<Integer>();
+		this.maxelementos = max;
+	}
+
+	synchronized public void encolar(int numero) {
+
+		if (this.cola.size() == maxelementos) {
+			try {
+				Thread.sleep(50);
+			} catch (InterruptedException e) {
+
+				e.printStackTrace();
+			}
+		} else {
+			this.cola.add(numero);
+		}
+
+	}
+
+	synchronized public void desencolar() {
+		if (this.cola.size() > 0) {
+			this.cola.remove(this.cola.size() - 1);
+		}else {
+			try {
+				Thread.sleep(50);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+
+	}
+
+	public void ver() {
+		for (int i = 0; i < cola.size(); i++) {
+			System.out.printf("%d", cola.get(i));
+			System.out.println();
+		}
+	}
+}

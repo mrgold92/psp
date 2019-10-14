@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class Cola {
+
+	private int maxelementos;
+	private ArrayList<Integer> cola;
+
+	public Cola(int max) {
+		this.cola = new ArrayList<Integer>();
+		this.maxelementos = max;
+	}
+
+	synchronized public void encolar(int numero) {
+		this.cola.add(numero);
+	}
+
+	synchronized public void desencolar() {
+		if (this.cola.size() > 0) {
+
+		}
+	}
+}
